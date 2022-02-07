@@ -1,9 +1,0 @@
-it\backend\app\Application.class
-it\backend\web\BusinessUserController.class
-it\backend\conf\ProjectConfig.class
-it\backend\conf\JwtAuthenticationConfigurer.class
-it\backend\filter\JwtAuthenticationFilter.class
-it\backend\components\JwtAuthentication$1.class
-it\backend\components\JwtAuthentication.class
-it\backend\web\ValidationController.class
-it\backend\web\SimController.class
