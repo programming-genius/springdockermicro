@@ -1,0 +1,128 @@
+{
+	"info": {
+		"_postman_id": "7482d2ba-b249-4ed9-9b49-1fefc2130846",
+		"name": "Auth Server",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Token",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "string"
+					},
+					{
+						"key": "grant_type",
+						"value": "password",
+						"type": "string",
+						"disabled": true
+					},
+					{
+						"key": "username",
+						"value": "user",
+						"type": "string",
+						"disabled": true
+					},
+					{
+						"key": "password",
+						"value": "1234",
+						"type": "string",
+						"disabled": true
+					},
+					{
+						"key": "scope",
+						"value": "mobileService",
+						"type": "string",
+						"disabled": true
+					},
+					{
+						"key": "client_id",
+						"value": "mobileService",
+						"type": "string",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "grant_type",
+							"value": "password",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "user",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "1234",
+							"type": "string"
+						},
+						{
+							"key": "scope",
+							"value": "mobileService",
+							"type": "string"
+						},
+						{
+							"key": "client_id",
+							"value": "mobileService",
+							"type": "string"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://192.168.38.147:8080/auth/realms/master/protocol/openid-connect/token",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"38",
+						"147"
+					],
+					"port": "8080",
+					"path": [
+						"auth",
+						"realms",
+						"master",
+						"protocol",
+						"openid-connect",
+						"token"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "info",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.38.147:8080/auth/realms/master/.well-known/openid-configuration",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"38",
+						"147"
+					],
+					"port": "8080",
+					"path": [
+						"auth",
+						"realms",
+						"master",
+						".well-known",
+						"openid-configuration"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
